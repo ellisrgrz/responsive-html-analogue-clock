@@ -5,3 +5,7 @@ This is a simple implementation of a analogue clock, written in javascript, to b
 ## Getting started
 
 Just clone the git repository and drop the index.html on your favorite web browser. Fix the bugs, come up with a better design pattern, improve the layout and hit me with a pull request.
+
+## Live demo
+
+[Follow me to see the magic](https://mborgbrant.github.io/responsive-html-analogue-clock/)
