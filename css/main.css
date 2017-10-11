@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #333;
+	overflow: hidden;
+}
+
+.clockCenter {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #eee;
+	z-index: 4000;
+}
+
+.hourMarks {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: transform 5s;
+}
+
+.hourMarks.morph {
+	transform: scale(1.04);
+	//background: #444;
+}
+
+.hourMark {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #eee;
+}
+
+.lineStyle {
+	height: 2px;
+	background-color: #eee;
+	position: absolute;
+	transform-origin: 0% 0%;
+	box-shadow: 0px 0px 2px 2px #555;
+	z-index: 99;
+}
