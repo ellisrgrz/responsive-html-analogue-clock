@@ -12,7 +12,7 @@ window.requestAnimFrame = (function () {
 
 var resized = false;
 
-window.addEventListener('resize', function () {
+window.addEventListener('resize', () => {
 	resized = true;
 });
 

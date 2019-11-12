@@ -25,7 +25,7 @@ class Line {
 		this._calculateTransform(ax, ay, bx, by);
 
 		// TODO: Handle the width togeteher with the position to compensate (this will be obvious when using larger numbers for the width).
-		this.width = width + 'px';
+		this.width = `${width}px`;
 		this.lineDiv = null;
 	}
 
@@ -37,10 +37,10 @@ class Line {
 		}
 		// This is confusing, but it's correct. The lines height in css will be the viewed width of lines width
 		this.lineDiv.style.height = this.width;
-		this.lineDiv.style.left = this.ax + 'px';
-		this.lineDiv.style.top = this.ay + 'px';
-		this.lineDiv.style.width = Math.sqrt((this.ax - this.bx) * (this.ax - this.bx) + (this.ay - this.by) * (this.ay - this.by)) + 'px';
-		this.lineDiv.style.transform = ['rotate(', this.angle, 'deg)'].join('');
+		this.lineDiv.style.left = `${this.ax}px`;
+		this.lineDiv.style.top = `${this.ay}px`;
+		this.lineDiv.style.width = `${Math.sqrt((this.ax - this.bx) * (this.ax - this.bx) + (this.ay - this.by) * (this.ay - this.by))}px`;
+		this.lineDiv.style.transform = `rotate(${this.angle}deg)`;
 
 		return this.lineDiv;
 	}
